@@ -1,5 +1,4 @@
 @import 'config';
-@import 'menu';
 
 $primary-color: #444;
 $secondary-color: #33D7FF;
@@ -24,10 +23,12 @@ h3{
     margin:0;
     font-weight: 400;
 
+    //sub heading defined inside heading
     &.lg-heading{
         font-size: 5rem;
     }
 
+    //sub heading defined inside heading
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
@@ -35,45 +36,145 @@ h3{
     }
 }
 
+//hyperlink
 a {
     color: white;
     text-decoration: none;
 }
 
-header{
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-}
 
 .text-secondary {
     color: $secondary-color;
 }
 
-main{
+
+//side bar class
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* The navigation menu links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .topnav a:hover {
+    color: #33D7FF;
+  }
+
+
+//main class
+.main{
     padding: 4rem;
     height: 100%;
 
     .icons{
         margin-top: 1rem;
-
         a{
             padding: 0.4rem;
             @include easeOut;
 
             &:hover {
                 color: $secondary-color;
-                transition: all 0.5s ease-out;
-            }
+              }
         }
     }
-
     &#home {
         overflow: hidden;
         h1 {
           margin-top: 15vh;
         }
       }
+}
+
+.pic_class{
+    border-radius: 60%;
+    margin: 10px auto 10px;
+    display: block;
+}
 
 
+//about
+
+.about-info {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'bioimage bio bio '
+      'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+  
+    .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 30%;
+      border: $secondary-color 3px solid;
+    }
+  
+    .bio {
+      grid-area: bio;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-bottom: $secondary-color 5px solid;
+    }
+  
+    .job-1 {
+      grid-area: job1;
+    }
+  
+    .job-2 {
+      grid-area: job2;
+    }
+  
+    .job-3 {
+      grid-area: job3;
+    }
+  
+    .job {
+      font-size: 1.2rem;
+      background: lighten($primary-color, 5);
+      padding: 0.5rem;
+      border-bottom: $secondary-color 5px solid;
+    }
+  }
+
+
+
+
+
+//work
+.project-info {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    padding: 3rem;
+    
+
+  
+    img {
+        width:  200px;
+        height: 200px;
+        border: 3px #33D7FF solid;
+        
+  
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .lg-heading2{
+    padding: 1rem 3rem;
+    font-size: 5rem;
 }
