@@ -2,11 +2,11 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #38529a;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
 
 h1,
@@ -23,17 +23,17 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(59, 86, 161, 0.5); }
 
 a {
   color: white;
   text-decoration: none; }
 
 .text-secondary {
-  color: #33D7FF; }
+  color: #49d1d6; }
 
 .topnav {
-  background-color: #333;
+  background-color: #38529a;
   overflow: hidden; }
 
 /* The navigation menu links */
@@ -47,10 +47,12 @@ a {
 
 /* When you mouse over the navigation links, change their color */
 .topnav a:hover {
-  color: #33D7FF; }
+  color: #33d7ff; }
 
 .main {
-  padding: 4rem;
+  padding-top: 7rem;
+  padding-right: 9rem;
+  padding-left: 9rem;
   height: 100%; }
   .main .icons {
     margin-top: 1rem; }
@@ -58,33 +60,34 @@ a {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       .main .icons a:hover {
-        color: #33D7FF; }
+        color: #49d1d6; }
   .main#home {
     overflow: hidden; }
     .main#home h1 {
       margin-top: 15vh; }
-
-.pic_class {
-  border-radius: 60%;
-  margin: 10px auto 10px;
-  display: block; }
+  .main .pic_class {
+    width: 46rem;
+    height: 36rem;
+    position: relative;
+    bottom: 33rem;
+    left: 50%; }
 
 .about-info {
   padding: 2rem;
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 'bioimage bio bio ' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio " "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 30%;
-    border: #33D7FF 3px solid; }
+    border: #49d1d6 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem;
     padding: 0.5rem;
-    border-bottom: #33D7FF 5px solid; }
+    border-bottom: #49d1d6 5px solid; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -93,9 +96,9 @@ a {
     grid-area: job3; }
   .about-info .job {
     font-size: 1.2rem;
-    background: #515151;
+    background: #3f5cad;
     padding: 0.5rem;
-    border-bottom: #33D7FF 5px solid; }
+    border-bottom: #49d1d6 5px solid; }
 
 .project-info {
   display: grid;
@@ -106,10 +109,10 @@ a {
   .project-info img {
     width: 200px;
     height: 200px;
-    border: 3px #33D7FF solid; }
+    border: 3px #33d7ff solid; }
     .project-info img:hover {
       opacity: 0.5;
-      border-color: #33D7FF;
+      border-color: #49d1d6;
       transition: all 0.5s ease-out; }
 
 .lg-heading2 {
