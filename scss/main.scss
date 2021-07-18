@@ -66,6 +66,7 @@ a {
   color: #33d7ff;
 }
 
+//--------Home Page start----------------
 //main class
 .main {
   padding-right: 9rem;
@@ -91,138 +92,7 @@ a {
   }
 }
 
-//about
-
-// .about-info {
-//   padding: 2rem;
-//   display: grid;
-//   grid-gap: 20px;
-//   grid-template-areas:
-//     "bioimage bio bio "
-//     "job1 job2 job3";
-//   grid-template-columns: repeat(3, 1fr);
-
-//   .bio-image {
-//     grid-area: bioimage;
-//     margin: auto;
-//     border-radius: 30%;
-//     border: $secondary-color 3px solid;
-//   }
-
-//   .bio {
-//     grid-area: bio;
-//     font-size: 1.5rem;
-//     padding: 0.5rem;
-//     border-bottom: $secondary-color 5px solid;
-//   }
-
-//   .job-1 {
-//     grid-area: job1;
-//   }
-
-//   .job-2 {
-//     grid-area: job2;
-//   }
-
-//   .job-3 {
-//     grid-area: job3;
-//   }
-
-//   .job {
-//     font-size: 1.2rem;
-//     background: lighten($primary-color, 5);
-//     padding: 0.5rem;
-//     border-bottom: $secondary-color 5px solid;
-//   }
-// }
-
-.about .content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.about .content .col-left {
-  position: relative;
-  width: 45%;
-}
-
-.about .content .col-right {
-  position: relative;
-  width: 50%;
-}
-
-.about .content .col-left .img-card {
-  position: relative;
-  width: 100%;
-  min-height: 400px;
-}
-
-.about .content .col-left .img-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.about .content .col-right .content-title {
-  font-size: 2em;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.about .content .col-right .paragraph-text {
-  font-size: 1em;
-}
-
-.about .content .column {
-  position: relative;
-  width: 100%;
-}
-
-.about .content .col-right {
-  margin-top: 110px;
-}
-
-//work
-.project-info {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 10px;
-  padding: 3rem;
-
-  img {
-    width: 200px;
-    height: 200px;
-    border: 3px #33d7ff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-}
-
-.lg-heading2 {
-  padding: 1rem 3rem;
-  font-size: 5rem;
-}
-
-@media (max-width: 1040px) {
-  .about .content {
-    flex-direction: column;
-  }
-}
-
 // ---------slide show start-------------
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -328,3 +198,81 @@ a {
 }
 
 // ---------slide show end-------------
+//--------Home Page end----------------
+
+//--------About Page start----------------
+.about-info {
+  padding: 2rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "bioimage bio bio "
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 30%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    // border-bottom: $secondary-color 5px solid;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    font-size: 1.2rem;
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+.title {
+  margin-top: 5rem;
+  margin-left: 10rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+//--------About Page end----------------
+
+//--------Project Page start----------------
+
+.project-info {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  padding: 3rem;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border: 3px #33d7ff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//--------Project Page end----------------

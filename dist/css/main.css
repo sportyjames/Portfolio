@@ -63,73 +63,6 @@ a {
     .main#home h1 {
       margin-top: 15vh; }
 
-.about .content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px; }
-
-.about .content .col-left {
-  position: relative;
-  width: 45%; }
-
-.about .content .col-right {
-  position: relative;
-  width: 50%; }
-
-.about .content .col-left .img-card {
-  position: relative;
-  width: 100%;
-  min-height: 400px; }
-
-.about .content .col-left .img-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px; }
-
-.about .content .col-right .content-title {
-  font-size: 2em;
-  font-weight: 800;
-  margin-bottom: 20px; }
-
-.about .content .col-right .paragraph-text {
-  font-size: 1em; }
-
-.about .content .column {
-  position: relative;
-  width: 100%; }
-
-.about .content .col-right {
-  margin-top: 110px; }
-
-.project-info {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 10px;
-  padding: 3rem; }
-  .project-info img {
-    width: 200px;
-    height: 200px;
-    border: 3px #33d7ff solid; }
-    .project-info img:hover {
-      opacity: 0.5;
-      border-color: #49d1d6;
-      transition: all 0.5s ease-out; }
-
-.lg-heading2 {
-  padding: 1rem 3rem;
-  font-size: 5rem; }
-
-@media (max-width: 1040px) {
-  .about .content {
-    flex-direction: column; } }
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -217,3 +150,51 @@ a {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+
+.about-info {
+  padding: 2rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "bioimage bio bio " "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 30%;
+    border: #49d1d6 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    font-size: 1.2rem;
+    background: #3f5cad;
+    padding: 0.5rem;
+    border-bottom: #49d1d6 5px solid; }
+
+.title {
+  margin-top: 5rem;
+  margin-left: 10rem;
+  font-weight: 400;
+  font-size: 1.5rem; }
+
+.project-info {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  padding: 3rem; }
+  .project-info img {
+    width: 200px;
+    height: 200px;
+    border: 3px #33d7ff solid; }
+    .project-info img:hover {
+      opacity: 0.5;
+      border-color: #49d1d6;
+      transition: all 0.5s ease-out; }
